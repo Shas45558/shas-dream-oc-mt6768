@@ -1,0 +1,46 @@
+config MTK_LEDS
+	tristate "MediaTek LED Support"
+	depends on LEDS_CLASS
+	---help---
+	  This selects the MediaTek(R) LEDs connected to MediaTek chips.
+	  If you want to use MediaTek(R) LEDs support, say Y or M here.
+	  If unsure, say N.
+	  Mediatek LED module includes backlight, indicate LED, keypad LED, button LED etc.
+
+config LIGHTNESS_MAPPING_VALUE
+	int "Backlight brightness mapping value"
+	default 255
+	---help---
+	  Backlight brightness mapping value, from 0 to 255.
+
+config BACKLIGHT_SUPPORT_LP8557
+	bool "Support backlight lp8557 board"
+	default n
+	---help---
+	  LED driver for LP8557 support.
+	  Set y to support.
+	  Set n to disable.
+	  For pwm external backlight.
+
+config KTD3136_SUPPORT
+    tristate "Kinetic KTD3136"
+    default n
+    help
+      Say y here to support Kinetic backlight IC KTD3136.
+
+config BACKLIGHT_SUPPORT_LM3697
+	bool "LM3697(DW8832) Support"
+	default n
+	---help---
+	  LED driver for lm3697(dw8832) support.
+	  Set y to support.
+	  Set n to disable.
+	  Charge pump driver for external backlight.
+
+config LM3697_SUPPORT
+    tristate "TI LM3697"
+    default n
+	select BACKLIGHT_LCD_SUPPORT
+	select BACKLIGHT_CLASS_DEVICE
+    help
+      Say y here to support TI backlight IC LM3697.
