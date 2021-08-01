@@ -1,5 +1,0 @@
-on fs
-    swapon_all ${MAGISKTMP}/fstab.enableswap
-
-on property:sys.boot_completed=1
-    exec u:r:magisk:s0 root root -- ${MAGISKTMP}/init.genom.sh
