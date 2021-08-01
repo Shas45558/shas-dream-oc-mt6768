@@ -3,7 +3,9 @@
 Hi build your own kernel from my source..
 
  what is needed:
+
 1.pc with ubuntu install
+
 2.some knowledge about build
 
 
