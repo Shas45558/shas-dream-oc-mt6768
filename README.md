@@ -1,10 +1,10 @@
 # shas-dream-oc-mt6768
 
-# Hi build your own kernel from my source..
+Hi build your own kernel from my source..
 
-# what is needed:
-# 1.pc with ubuntu install
-# 2.some knowledge about build
+ what is needed:
+1.pc with ubuntu install
+2.some knowledge about build
 
 
 # How it workes:
