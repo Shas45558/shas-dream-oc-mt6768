@@ -28,4 +28,7 @@ or ./merlin.sh (for merlin).
 
 7.Enjoy.
 
+# Download and Discuss join my Telegram Group
 
+
+https://t.me/ocmt6768
