@@ -42,7 +42,7 @@ endif
 rtic_mp.dtb: vmlinux FORCE
 	$(DTC) -O dtb -o rtic_mp.dtb -b 0 $(DTC_FLAGS) rtic_mp.dts
 
-$(obj)/Image: vmlinux $(obj)/mtk.dtb FORCE
+$(obj)/Image: vmlinux FORCE
 	$(call if_changed,objcopy)
 
 $(obj)/Image.bz2: $(obj)/Image FORCE
@@ -64,9 +64,6 @@ $(obj)/Image.lzo: $(obj)/Image FORCE
 	$(call if_changed,lzo)
 
 $(obj)/Image.gz-dtb: $(obj)/Image.gz $(DTB_OBJS) FORCE
-	$(call if_changed,cat)
-
-$(obj)/mtk.dtb: $(DTB_OBJS) FORCE
 	$(call if_changed,cat)
 
 $(obj)/dtbo.img: $(DTBO_OBJS) FORCE
