@@ -330,7 +330,7 @@ static inline void fast_imageblit(const struct fb_image *image, struct fb_info *
 	}
 }	
 
-}
+
 
 /*
  * Optimized fast_imageblit for bpp == 32. ppw = 1, bit_mask = 1 folded
