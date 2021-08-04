@@ -28,4 +28,6 @@ or ./merlin.sh (for merlin).
 
 7.Enjoy.
 
+# Download latest version and discuss join...
 
+https://t.me/ocmt6768
