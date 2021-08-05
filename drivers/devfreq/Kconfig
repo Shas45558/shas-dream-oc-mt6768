@@ -164,4 +164,4 @@ config DEVFREQ_MSM_LLCCBW_BOOST_FREQ
 
 source "drivers/devfreq/event/Kconfig"
 
-endifendif # PM_DEVFREQ
+endif # PM_DEVFREQ
