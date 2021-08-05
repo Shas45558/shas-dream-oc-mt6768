@@ -1880,7 +1880,7 @@ ifneq ($(cmd_files),)
   include $(cmd_files)
 
 
-endif	# skip-makefile
+
 
 PHONY += FORCE
 FORCE:
