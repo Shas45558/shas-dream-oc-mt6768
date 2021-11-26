@@ -128,3 +128,6 @@ AnyKernel3-master
 outL
 outM
 arch/arm64/configs/bak/
+clang-13/
+outL/
+outM/
