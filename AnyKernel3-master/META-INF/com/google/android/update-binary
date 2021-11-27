@@ -491,6 +491,26 @@ do_modules;
 debugging;
 restore_env;
 
+# genom start
+
+ui_print " "
+ui_print "Removing file needed for this kernel"
+sleep 1
+ui_print " "
+ui_print "Mounting system rw"
+mount -o rw /system_root && ui_print "- mount system done"
+sleep 1
+ui_print " "
+ui_print "Removing file"
+rm /system_root/system/bin/mcd && ui_print "- file removed" || ui_print "- file already removed"
+sleep 1
+ui_print " "
+ui_print "Unmount system"
+umount /system_root
+
+
+# genom end
+
 if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   cleanup;
 fi;
