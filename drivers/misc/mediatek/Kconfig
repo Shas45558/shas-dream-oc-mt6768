@@ -62,7 +62,7 @@ config MTK_LM_MODE
 
 config MTK_BOUNCING_CHECK
 	bool "Enable bouncing buffer check"
-	default n
+	default y
 	help
 	  In order to avoid misusing the DMA_MASK, an auto-check detection
 	  is hooked in kernel to check whether the DMA_MASK value is correct.
