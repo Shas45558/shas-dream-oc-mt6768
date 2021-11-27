@@ -358,8 +358,8 @@ endif
 ifneq (,$(filter $(CONFIG_MTK_PLATFORM), "mt6768"))
 obj-$(CONFIG_THERMAL) += mtk_ts_battery.o
 
-obj-$(CONFIG_THERMAL) += mtk_ts_bts.o
-obj-$(CONFIG_THERMAL) += mtk_ts_btsmdpa.o
+#obj-$(CONFIG_THERMAL) += mtk_ts_bts.o
+#obj-$(CONFIG_THERMAL) += mtk_ts_btsmdpa.o
 
 obj-$(CONFIG_THERMAL) += mtk_ts_cpu_noBank.o
 obj-$(CONFIG_THERMAL) += mtk_ts_pa.o
@@ -368,14 +368,14 @@ obj-$(CONFIG_THERMAL) += mtk_ts_pa_thput.o
 obj-$(CONFIG_THERMAL) += mtk_ts_charger.o
 #obj-$(CONFIG_THERMAL) += mtk_ts_charger2.o
 
-ifneq ($(CONFIG_MTK_COMBO_WIFI),)
-    obj-$(CONFIG_THERMAL) += mtk_ts_wmt.o
-endif
+#ifneq ($(CONFIG_MTK_COMBO_WIFI),)
+#   obj-$(CONFIG_THERMAL) += mtk_ts_wmt.o
+#endif
 
 obj-$(CONFIG_THERMAL) += mtk_tsAll.o
 obj-$(CONFIG_THERMAL) += mtk_ts_imgsensor.o
 obj-$(CONFIG_THERMAL) += mtk_ts_dctm.o
-obj-$(CONFIG_THERMAL) += mtk_ts_pmic.o
+#obj-$(CONFIG_THERMAL) += mtk_ts_pmic.o
 obj-$(CONFIG_THERMAL) += mtk_ts_blk_ntc.o
 
 ifneq ($(CONFIG_MTK_BIF_SUPPORT),)
